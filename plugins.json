@@ -1,0 +1,43 @@
+[
+    {
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Korduene_Logo.png",
+        "fileHash": "sha256-3e31b59aaa587656b79fd58d6d87eecc0d27f6ffe371e63cce1fe2aa19c396f0",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/saywhy2me/CloudstreamExtensions",
+        "fileSize": 7365,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "Jordan"
+        ],
+        "tvTypes": [
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "ExampleProvider",
+        "description": "A bare example provider. Copy it as a starting point for a real scraper.",
+        "url": "https://raw.githubusercontent.com/saywhy2me/CloudstreamExtensions/builds/ExampleProvider.cs3",
+        "name": "ExampleProvider"
+    },
+    {
+        "iconUrl": "https://raw.githubusercontent.com/plexinc/plex-media-player/master/resources/images/icon.png",
+        "fileHash": "sha256-5b8912c4570a823f9ab0e7af67b3fbb05ee949a42ef27b2ddcf4f18cdac62c70",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/saywhy2me/CloudstreamExtensions",
+        "fileSize": 30461,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "Jordan"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "MediaServerProvider",
+        "description": "Stream from your own Plex Media Server. Set your server URL and token in the extension settings.",
+        "url": "https://raw.githubusercontent.com/saywhy2me/CloudstreamExtensions/builds/MediaServerProvider.cs3",
+        "name": "MediaServerProvider"
+    }
+]
