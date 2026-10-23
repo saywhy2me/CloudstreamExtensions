@@ -44,8 +44,11 @@ jobs:
       # the long-removed "tools" package and fails. Install only what we compile against.
       - name: Install Android SDK packages
         run: |
-          yes | sdkmanager --licenses >/dev/null 2>&1 || true
-          sdkmanager "platforms;android-35" "build-tools;35.0.0"
+          SDK="${ANDROID_SDK_ROOT:-$ANDROID_HOME}"
+          SDKMANAGER="$(ls "$SDK"/cmdline-tools/*/bin/sdkmanager 2>/dev/null | head -1 || true)"
+          echo "Using sdkmanager: $SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0"
 
       - name: Build Plugins
         run: |
