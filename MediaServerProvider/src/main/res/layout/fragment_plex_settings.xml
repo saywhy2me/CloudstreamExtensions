@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plex_settings_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plex_settings_help"
+        android:textSize="13sp"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plex_server_label" />
+
+    <EditText
+        android:id="@+id/plexServerUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/plex_server_hint"
+        android:inputType="textUri"
+        android:importantForAutofill="no"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plex_token_label" />
+
+    <EditText
+        android:id="@+id/plexToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/plex_token_hint"
+        android:inputType="textPassword"
+        android:importantForAutofill="no"
+        android:paddingBottom="16dp" />
+
+    <Button
+        android:id="@+id/plexSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plex_save" />
+
+</LinearLayout>

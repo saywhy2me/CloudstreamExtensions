@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="plex_settings_title">Plex Media Server</string>
+    <string name="plex_settings_help">Connect this extension to your own Plex server. Find your token by opening any library item in Plex Web, clicking … &#8594; Get Info &#8594; View XML, and copying the X-Plex-Token value from the address bar.</string>
+    <string name="plex_server_label">Server URL</string>
+    <string name="plex_server_hint">http://192.168.1.50:32400</string>
+    <string name="plex_token_label">X-Plex-Token</string>
+    <string name="plex_token_hint">your personal token</string>
+    <string name="plex_save">Save</string>
+</resources>
