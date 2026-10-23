@@ -10,3 +10,6 @@
 .cxx
 local.properties
 .vscode
+
+# local build artifacts for sideloading
+/dist
