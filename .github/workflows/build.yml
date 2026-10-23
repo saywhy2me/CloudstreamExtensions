@@ -39,8 +39,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+      # GitHub runners already ship the Android SDK (ANDROID_HOME/ANDROID_SDK_ROOT
+      # preset). We avoid android-actions/setup-android because it tries to install
+      # the long-removed "tools" package and fails. Install only what we compile against.
+      - name: Install Android SDK packages
+        run: |
+          yes | sdkmanager --licenses >/dev/null 2>&1 || true
+          sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
       - name: Build Plugins
         run: |
